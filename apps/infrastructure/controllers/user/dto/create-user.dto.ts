@@ -3,7 +3,7 @@ import { IsEmail, IsNotEmpty, IsString } from 'class-validator';
 
 export class CreateUserDto {
   @ApiProperty({
-    description: 'Name of user',
+    description: 'Name of the user',
     type: String,
     example: 'John Doe',
   })
@@ -12,7 +12,7 @@ export class CreateUserDto {
   name: string;
 
   @ApiProperty({
-    description: 'Email of user',
+    description: 'Email of the user',
     type: String,
     example: 'john@doe.com',
   })
@@ -21,7 +21,7 @@ export class CreateUserDto {
   mail: string;
 
   @ApiProperty({
-    description: 'Login of user',
+    description: 'Login of the user',
     type: String,
     example: 'john_doe',
   })
@@ -30,7 +30,7 @@ export class CreateUserDto {
   login: string;
 
   @ApiProperty({
-    description: 'Password of user',
+    description: 'Password of the user',
     type: String,
     example: 'strong_password',
   })
